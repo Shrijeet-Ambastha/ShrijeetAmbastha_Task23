@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>+ Project — Write, plan, share. With AI at your side.</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-stone-900 font-sans antialiased selection:bg-orange-100 selection:text-orange-900">
+
+  <!-- 1, 2, 3: Sticky Navigation Bar with Logo, Links & CTA -->
+  <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-orange-100/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-orange-600 text-white font-bold text-lg shadow-sm shadow-orange-500/20 group-hover:bg-orange-700 transition-colors">
+            +
+          </span>
+          <span class="font-extrabold text-xl tracking-tight text-stone-900 group-hover:text-orange-600 transition-colors">
+            Project
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-stone-600">
+          <a href="#product" class="transition-colors hover:text-orange-600">Product</a>
+          <a href="#solutions" class="transition-colors hover:text-orange-600">Solutions</a>
+          <a href="#resources" class="transition-colors hover:text-orange-600">Resources</a>
+          <a href="#pricing" class="transition-colors hover:text-orange-600">Pricing</a>
+          <a href="#login" class="transition-colors hover:text-orange-600">Log in</a>
+        </nav>
+
+        <!-- Navbar CTA Button -->
+        <div class="flex items-center gap-3">
+          <a href="#signup" class="inline-flex items-center justify-center rounded-xl bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-orange-600/20 hover:bg-orange-700 transition-all hover:scale-[1.02]">
+            Get AI free
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 4, 5, 6, 7, 8, 9: Hero Section with Gradient, Centered Content, Positioned CTAs, Dashboard Preview & Floating Cards -->
+  <section class="relative bg-gradient-to-b from-orange-100/80 via-orange-50/40 to-white pt-20 pb-36 lg:pb-44 overflow-hidden border-b border-stone-200/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Centered Hero Copy -->
+      <div class="text-center max-w-3xl mx-auto space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-orange-800 text-xs font-semibold tracking-wide border border-orange-200">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+          Next-Gen Workspace
+        </div>
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-stone-900 tracking-tight leading-[1.1]">
+          Write, plan, share. <br class="hidden sm:inline" />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-600">
+            With AI at your side.
+          </span>
+        </h1>
+        <p class="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          Supercharge your workflow with intelligent notes, connected team projects, and real-time execution. Turn complex operations into structured progress without switching tabs.
+        </p>
+
+        <!-- 7: CTA Buttons Container with Relative & Absolute Utilities -->
+        <div class="relative w-full max-w-md mx-auto h-16 mt-8 flex items-center justify-center">
+          <!-- Button 1: Get AI free -->
+          <a href="#signup" class="absolute left-1/2 -translate-x-[105%] top-1/2 -translate-y-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-orange-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-600/25 transition-all hover:bg-orange-700 hover:-translate-y-[calc(50%+2px)]">
+            Get AI free
+          </a>
+          <!-- Button 2: Request a demo -->
+          <a href="#demo" class="absolute left-1/2 translate-x-[5%] top-1/2 -translate-y-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-xl border border-stone-300 bg-white px-6 py-3.5 text-sm font-semibold text-stone-700 shadow-sm transition-all hover:bg-stone-50 hover:border-stone-400 hover:-translate-y-[calc(50%+2px)]">
+            Request a demo
+          </a>
+        </div>
+      </div>
+
+      <!-- 8 & 9: Dashboard Preview Container (Relative) with Absolute Elements & 3 Floating Cards -->
+      <div class="relative mt-16 lg:mt-24 max-w-5xl mx-auto h-[420px] sm:h-[540px] md:h-[620px]">
+        
+        <!-- 8: Dashboard Preview Image with absolute positioning inside relative container -->
+        <div class="absolute inset-x-0 bottom-0 top-6 rounded-2xl border border-stone-200/80 bg-white p-3 shadow-2xl shadow-stone-900/10 overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600" 
+            alt="AI Project Management Dashboard Preview" 
+            class="w-full h-full object-cover object-top rounded-xl border border-stone-100"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/20 via-transparent to-transparent pointer-events-none"></div>
+        </div>
+
+        <!-- 9: Floating Card 1 — Tasks (Absolute, Z-Index, Shadow) -->
+        <div class="absolute -top-4 -left-3 sm:-left-8 z-20 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl shadow-stone-900/10 border border-orange-100 w-56 sm:w-64 transition-transform hover:-translate-y-1">
+          <div class="flex items-center justify-between pb-2 border-b border-stone-100">
+            <span class="text-xs font-bold text-stone-800 uppercase tracking-wider">Tasks</span>
+            <span class="text-[11px] font-semibold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">4 Pending</span>
+          </div>
+          <div class="mt-3 space-y-2">
+            <div class="flex items-center gap-2 text-xs text-stone-700">
+              <span class="w-3.5 h-3.5 rounded-full border-2 border-emerald-500 flex items-center justify-center text-[9px] text-emerald-600">✓</span>
+              <span>Draft Q4 Product Roadmaps</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-stone-700">
+              <span class="w-3.5 h-3.5 rounded-full border-2 border-orange-400"></span>
+              <span>Summarize meeting briefs</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-stone-700">
+              <span class="w-3.5 h-3.5 rounded-full border-2 border-stone-300"></span>
+              <span>Sync with AI assistant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9: Floating Card 2 — Project Status (Absolute, Z-Index, Shadow) -->
+        <div class="absolute -top-6 -right-3 sm:-right-8 z-20 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl shadow-stone-900/10 border border-orange-100 w-56 sm:w-64 transition-transform hover:-translate-y-1">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-stone-800 uppercase tracking-wider">Project Status</span>
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> On Track
+            </span>
+          </div>
+          <div class="mt-3">
+            <div class="flex justify-between text-xs text-stone-500 mb-1">
+              <span>Sprint Progress</span>
+              <span class="font-semibold text-stone-800">84%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-stone-100 overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 84%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9: Floating Card 3 — Team Activity (Absolute, Z-Index, Shadow) -->
+        <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-auto sm:-right-4 z-30 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl shadow-stone-900/15 border border-stone-200/80 w-72 sm:w-80 transition-transform hover:-translate-y-1">
+          <div class="flex items-center justify-between pb-2 mb-2 border-b border-stone-100">
+            <span class="text-xs font-bold text-stone-800 uppercase tracking-wider">Team Activity</span>
+            <span class="text-[11px] text-stone-400">Live</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="relative shrink-0">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120" 
+                alt="Sarah member avatar" 
+                class="w-9 h-9 rounded-full object-cover border border-orange-200"
+              />
+              <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white"></span>
+            </div>
+            <div class="text-xs">
+              <p class="font-semibold text-stone-800">Sarah Jenkins</p>
+              <p class="text-stone-500">Generated 6 doc insights with AI</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Feature Grid Content Section -->
+  <section id="product" class="py-24 bg-stone-50 border-b border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-extrabold text-stone-900 tracking-tight">Everything unified under one platform</h2>
+        <p class="text-stone-500 mt-3 text-sm sm:text-base">Experience a connected environment designed to take projects from messy brainstorm to delivered solution.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 border border-stone-200/70 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-lg mb-6">
+            ✎
+          </div>
+          <h3 class="text-lg font-bold text-stone-900">AI Contextual Writing</h3>
+          <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+            Summarize documents, generate action plans, and extract technical milestones directly within your notes.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-stone-200/70 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg mb-6">
+            ☵
+          </div>
+          <h3 class="text-lg font-bold text-stone-900">Connected Roadmaps</h3>
+          <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+            Maintain synchronization across epics, sprints, and release calendars with effortless drag-and-drop views.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-stone-200/70 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg mb-6">
+            👥
+          </div>
+          <h3 class="text-lg font-bold text-stone-900">Shared Collaboration</h3>
+          <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+            Bring team conversations into the active work area. Cut down repetitive status meetings and align faster.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-12 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500 font-medium">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-orange-600 text-white font-bold text-xs">+</span>
+        <span class="font-bold text-stone-800 text-sm">+ Project</span>
+      </div>
+      <p>© 2026 + Project Inc. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-stone-900">Privacy</a>
+        <a href="#" class="hover:text-stone-900">Terms</a>
+        <a href="#" class="hover:text-stone-900">Security</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 10: Fixed Chat Widget at bottom-right using fixed, bottom-6, right-6, z-50 -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <button 
+      type="button" 
+      aria-label="Open AI Assistant Chat"
+      class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-orange-600 text-white shadow-xl shadow-orange-600/35 hover:bg-orange-700 hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-300"
+    >
+      <!-- Chat Icon SVG -->
+      <svg class="w-6 h-6 transition-transform group-hover:rotate-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+      </svg>
+      <!-- Active Notification Dot -->
+      <span class="absolute top-0 right-0 flex h-3.5 w-3.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
+      </span>
+    </button>
+  </div>
+
+</body>
+</html>
